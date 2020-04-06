@@ -19,7 +19,8 @@ const Index = (props: indexProps) => {
     const [dailyTrendArray, setDailyTrendArray] = useState<Array<dailyTrend>>([])
     useEffect(() => {
         const fetchData = async () => {
-            const res = await axios('/api/trends/date?start=2020-04-05T00:00:00.000Z&end=2020-04-06T00:00:00.000Z&geo=US')
+            const end = new Date(Date.now()).toISOString()
+            const res = await axios(`/api/trends/date?start=2020-04-05T00:00:00.000Z&end=${end}&geo=US`)
             console.log(res)
 
             setDailyTrendArray(res.data.dailyTrends)
