@@ -47,11 +47,11 @@ const Index = (props: indexProps) => {
                         <div key={index} className="daily-trend-box">
                             <div className="daily-trends-header">
                                 <h2>{new Date(dailyTrend.date).toDateString()}</h2>
-                                <h2>Country: {dailyTrend.geo}</h2>
+                                <h3>Country: {dailyTrend.geo}</h3>
                             </div>
                             <div className="daily-trends-content">
                                 <ul>
-                                    {dailyTrend.trendingSearches.map((topic, idx) => <li key={idx}>{topic}</li>)}
+                                    {dailyTrend.trendingSearches.map((topic, idx) => <li key={idx}>{`${idx}. ${topic}`}</li>)}
                                 </ul>
                             </div>
 
@@ -67,6 +67,10 @@ const Index = (props: indexProps) => {
                     flex-direction: row;
                     flex-wrap: wrap;
                     align-items: flex-start;
+                    justify-content: space-between;
+                    /* background-color: blue; */
+                    margin: 0;
+                    width: 100%;
                 }
                 .daily-trend-box {
                     background-color: white;
@@ -76,11 +80,13 @@ const Index = (props: indexProps) => {
                     -webkit-box-shadow: 0px 0px 5px 0px rgba(171,171,171,0.61);
                     -moz-box-shadow: 0px 0px 5px 0px rgba(171,171,171,0.61);
                     box-shadow: 0px 0px 5px 0px rgba(171,171,171,0.61);
+                    font-family: 'Mukta';
                 }
                 .daily-trends-header {
                     color: #fff;
-                    background-color: #03a9f4;
+                    background-color: #3B88FF;
                     padding: 10px 20px;
+                    
                 }
                 .daily-trend-box ul {
                     list-style: none;
@@ -92,15 +98,15 @@ const Index = (props: indexProps) => {
                     
                 }
                 .daily-trend-box ul li {
-                    padding: 0.2rem;
+                    padding: 0.2rem 0.8rem;
                     /* width: 100%; */
                     background-color: #F7F7F7;
-                    transition: tranform 0.5s;
+                    transition: transform 0.5s;
                 }
                 .daily-trend-box ul li:hover {
                     transform: scale(1.1);
                     z-index:100;
-                    background: #25bcff;
+                    background: #3B88FF;
                     box-shadow: 0 5px 25px rgba(0, 0, 0, .1);
                     color: #fff;
                 }

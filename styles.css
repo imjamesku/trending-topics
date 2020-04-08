@@ -60,8 +60,9 @@ button:hover{
 
 .container {
     /* font-family: 'Open Sans', serif; */
+    /* background-color: palegreen; */
     padding: 20px 20px 60px;
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
   }
   

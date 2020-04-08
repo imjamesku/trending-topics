@@ -6,8 +6,7 @@ const Layout = (props) => (
     <>
         <Head>
             <title>Trending Topics</title>
-            <link rel="stylesheet"
-                href="https://fonts.googleapis.com/css?family=Tangerine"></link>
+            <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap" rel="stylesheet"></link>
         </Head>
         <Navbar />
         <div className="container">
