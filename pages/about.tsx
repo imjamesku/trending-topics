@@ -12,6 +12,7 @@ const About = () => {
                 <li>Viewing detail about a keyword by clicking on it.</li>
                 <li>Selecting countries and dates</li>
                 <li>Refine the UI</li>
+                <li>Add click to copy</li>
             </ul>
             <style jsx>{`
                 h1 {

@@ -51,7 +51,10 @@ const Index = (props: indexProps) => {
                             </div>
                             <div className="daily-trends-content">
                                 <ul>
-                                    {dailyTrend.trendingSearches.map((topic, idx) => <li key={idx}>{`${idx}. ${topic}`}</li>)}
+                                    {dailyTrend.trendingSearches.map((topic, idx) => (
+                                        <li key={idx}>{`${idx}. ${topic}`}
+                                            <a href={`https://trends.google.com/trends/explore?q=${topic.replace(' ', '%20')}&date=now%207-d&geo=US`} target="_blank">{' '}<i className="fa fa-search"></i></a>
+                                        </li>))}
                                 </ul>
                             </div>
 
@@ -67,14 +70,14 @@ const Index = (props: indexProps) => {
                     flex-direction: row;
                     flex-wrap: wrap;
                     align-items: flex-start;
-                    justify-content: space-between;
+                    justify-content: flex-start;
                     /* background-color: blue; */
                     margin: 0;
                     width: 100%;
                 }
                 .daily-trend-box {
                     background-color: white;
-                    margin: 1rem;
+                    margin: 0.5rem;
                     /* padding: 1rem; */
                     border-radius: 5px;
                     -webkit-box-shadow: 0px 0px 5px 0px rgba(171,171,171,0.61);
