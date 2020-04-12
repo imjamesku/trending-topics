@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../containers/Layout'
+import Layout from '../containers/layout/Layout'
 
 const About = () => {
     return (

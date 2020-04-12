@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+$primary-color: #464646;
+$secondary-color: rgb(211, 102, 0);
+$background-color: #E3E3E3;
+$text-font: 'Source Sans Pro', sans-serif;
+
+
+@function set-text-color($color) {
+    @if (lightness($color) > 70) {
+        @return #333;
+    }@else {
+        @return #fff;
+    }
+}
+
+@mixin set-background($color) {
+    background-color: $color;
+    color: set-text-color($color);
+}

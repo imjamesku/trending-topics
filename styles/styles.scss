@@ -1,0 +1,33 @@
+@import './config';
+@import './buttons';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;;
+  /* background-color: #24252A; */
+}
+
+body {
+  font-family: $text-font;
+  background-color: $background-color;
+}
+
+a {
+  font-weight: 500;
+  font-size: 16px;
+  // color: #636363;
+  text-decoration: none;
+}
+a:hover{
+  cursor: pointer;
+}
+
+.container {
+    /* font-family: 'Open Sans', serif; */
+    /* background-color: palegreen; */
+    padding: 20px 20px 60px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
