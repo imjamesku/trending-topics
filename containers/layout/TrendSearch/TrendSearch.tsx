@@ -16,8 +16,13 @@ const TrendSearch = (props: Props) => {
     })
 
     const search = (e: FormEvent<HTMLFormElement>) => {
-        props.setSearchParams(searchState)
         e.preventDefault()
+        // Check if the difference < 7 days
+        if (Math.abs(moment(searchState.startDate).diff(moment(searchState.endDate), 'd')) <= 30) {
+            props.setSearchParams(searchState)
+        } else {
+            window.alert("Start and end dates must be less than 30 days apart")
+        }
     }
 
     return (

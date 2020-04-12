@@ -36,7 +36,7 @@ handler.get(async (req: NextApiRequest, res: NextApiResponse) => {
         const start = Date.parse(<string>req.query.start)
         const end = Date.parse(<string>req.query.end)
 
-        console.log(`start: ${JSON.stringify(req.query)}`)
+        // console.log(`start: ${JSON.stringify(req.query)}`)
 
         const dailyTrends = await DailyTrend.find({ date: { $gte: start, $lte: end }, geo: geo })
 
