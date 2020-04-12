@@ -10,7 +10,7 @@ const About = () => {
             <h2>Todo</h2>
             <ul>
                 <li>Viewing detail about a keyword by clicking on it.</li>
-                <li>Selecting countries and dates</li>
+                <li>Check search date limits</li>
                 <li>Refine the UI</li>
                 <li>Add click to copy</li>
             </ul>

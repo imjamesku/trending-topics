@@ -7,6 +7,7 @@
     padding: 20px 5%;
     .clickable, a {
         @include set-background($primary-color); 
+        font-size: 1.4rem;
         transition: all 0.3s;
         &:hover {
             color: $secondary-color;
@@ -20,6 +21,7 @@
 
     li {
         display: inline-block;
-        padding: 0px 20px;   
+        padding: 0px 20px;
+        margin: 0rem 1rem;
     }
 }

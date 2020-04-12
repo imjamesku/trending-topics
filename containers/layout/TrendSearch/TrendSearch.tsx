@@ -29,7 +29,7 @@ const TrendSearch = (props: Props) => {
                 {/* <option value="US">United States</option> */}
                 {/* <option value="TW">Taiwan</option> */}
             </select>
-            <input type="submit" className="btn-primary" value="Search" />
+            <input type="submit" className="btn-secondary" value="Search" />
         </form>
     )
 }

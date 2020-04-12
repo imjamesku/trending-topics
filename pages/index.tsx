@@ -6,6 +6,7 @@ import Layout from '../containers/layout/Layout'
 import { dailyTrend } from './types/dailyTrend'
 import TrendBox from '../containers/layout/trends/trendBox/TrendBox'
 import TrendSearch from '../containers/layout/TrendSearch/TrendSearch'
+import styles from './index.module.scss'
 
 type indexProps = {
     trends: Array<any>;
@@ -41,25 +42,14 @@ const Index = (props: indexProps) => {
             {/* {props.trends.map((trend, idx) => <p key={idx}>{trend.date}</p>)} */}
             {/* {JSON.stringify(dailyTrendArray)} */}
             <TrendSearch setSearchParams={(searchParams: searchParamsType) => setSearchParams(searchParams)} />
-            <div className="daily-trends-container">
+
+            <div className={styles.dailyTrendsContainer}>
                 {dailyTrendArray.map((dailyTrend, index) => {
                     return (
                         <TrendBox key={index} dailyTrendData={dailyTrend} />
                     )
                 })}
             </div>
-
-            <style jsx>{`
-                .daily-trends-container {
-                    display: flex;
-                    flex-direction: row;
-                    flex-wrap: wrap;
-                    align-items: flex-start;
-                    justify-content: flex-start;
-                    margin: 0;
-                    width: 100%;
-                }
-            `}</style>
         </Layout>
 
     )

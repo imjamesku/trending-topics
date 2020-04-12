@@ -1,0 +1,16 @@
+.dailyTrendsContainer {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 768px) {
+    .dailyTrendsContainer{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .dailyTrendsContainer{
+        grid-template-columns: 100%;
+    }
+}
