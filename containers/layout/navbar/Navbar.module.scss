@@ -25,3 +25,9 @@
         margin: 0rem 1rem;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .brand {
+        display: none;
+    }
+}
