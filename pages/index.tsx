@@ -7,15 +7,10 @@ import { dailyTrend } from './types/dailyTrend'
 import TrendBox from '../containers/layout/trends/trendBox/TrendBox'
 import TrendSearch from '../containers/layout/TrendSearch/TrendSearch'
 import styles from './index.module.scss'
+import { searchParamsType } from './types/searchParamsType'
 
 type indexProps = {
     trends: Array<any>;
-}
-
-export type searchParamsType = {
-    startDate: Date;
-    endDate: Date;
-    geo: string;
 }
 
 const fetcher = url => fetch(url).then(res => res.json())
