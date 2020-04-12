@@ -1,6 +1,6 @@
 import React, { FormEvent, useState, ChangeEvent } from 'react'
 import styles from './TrendSearch.module.scss'
-import { searchParamsType } from '../../../pages/types/searchParamsType'
+import { searchParamsType } from '../../../types/searchParamsType'
 import { countries } from '../../../constants/constants'
 import moment from 'moment'
 

@@ -3,11 +3,11 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 import moment from 'moment'
 import Layout from '../containers/layout/Layout'
-import { dailyTrend } from './types/dailyTrend'
+import { dailyTrend } from '../types/dailyTrend'
 import TrendBox from '../containers/layout/trends/trendBox/TrendBox'
 import TrendSearch from '../containers/layout/TrendSearch/TrendSearch'
 import styles from './index.module.scss'
-import { searchParamsType } from './types/searchParamsType'
+import { searchParamsType } from '../types/searchParamsType'
 
 type indexProps = {
     trends: Array<any>;
