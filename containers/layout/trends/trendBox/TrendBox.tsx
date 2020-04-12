@@ -1,5 +1,5 @@
 import React from 'react'
-import { dailyTrend } from '../../../../pages/types/dailyTrend'
+import { dailyTrend } from '../../../../types/dailyTrend'
 import styles from './TrendBox.module.scss'
 import { countries } from '../../../../constants/constants'
 
