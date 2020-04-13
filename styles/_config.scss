@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
 $primary-color: #464646;
 $secondary-color: rgb(211, 102, 0);
-$background-color: #E3E3E3;
-$text-font: 'Source Sans Pro', sans-serif;
+$background-color: #f3f3f3;
+$text-font: 'Mukta', sans-serif;
 
 
 @function set-text-color($color) {
@@ -16,4 +16,12 @@ $text-font: 'Source Sans Pro', sans-serif;
 @mixin set-background($color) {
     background-color: $color;
     color: set-text-color($color);
+}
+
+@mixin pop ($color, $offset: 10px, $blur-radius: 10px) {
+    box-shadow: $offset 1.5*$offset $blur-radius rgba(darken($color: $color, $amount: 10%), 0.8), -0.4*$offset -1*$offset $blur-radius rgba(lighten($color: $color, $amount: 20%), .6);
+}
+
+@mixin dent($color, $offset: 10px, $blur-radius: 10px) {
+    box-shadow: inset $offset 1.5*$offset $blur-radius rgba(darken($color: $color, $amount: 10%), 0.8), inset -0.4*$offset -1*$offset $blur-radius rgba(lighten($color: $color, $amount: 20%), .6);
 }

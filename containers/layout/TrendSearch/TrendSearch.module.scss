@@ -9,9 +9,6 @@
     & > * {
         margin: 0.3rem 0.4rem;
     }
-    .formGroup{
-        
-    }
     input {
         font-size: 1.05rem;
         &[type=date] {
@@ -20,12 +17,18 @@
             font-family: $text-font;
             border-width: 0;        
         }
+        @include pop($background-color);
+        border-radius: 10px;
     }
     select {
         // margin: 0.2rem 0.8rem 0.2rem 0.4rem;
         background-color: white;
         border-width: 0;
         font-size: 1.05rem;
-        padding: 0.2rem
+        padding: 0.2rem;
+
+        @include pop($background-color);
+        border-radius: 10px;
+        
     }
 }

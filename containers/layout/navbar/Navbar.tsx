@@ -10,7 +10,7 @@ const Navbar = () => {
                 <li className={styles.clickable}><Link href="/"><a>Home</a></Link> </li>
                 <li className={styles.clickable}><Link href="/about"><a>About</a></Link></li>
             </ul>
-            <Link href="/contact"><button className="btn-secondary">contact</button></Link>
+            <Link href="/contact"><button className="btn-primary">contact</button></Link>
         </nav >
     )
 }

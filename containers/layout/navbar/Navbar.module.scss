@@ -1,14 +1,17 @@
 @import '../../../styles/config';
 .navbar {
-    @include set-background($primary-color);
+    // @include set-background($primary-color);
+    margin: 1rem;
+    border-radius: 20px;
+    @include pop($background-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 5%;
     .clickable, a {
-        @include set-background($primary-color); 
         font-size: 1.4rem;
         transition: all 0.3s;
+        // font-weight: bold;
         &:hover {
             color: $secondary-color;
             transform: scale(1.1);
@@ -21,8 +24,13 @@
 
     li {
         display: inline-block;
-        padding: 0px 20px;
+        padding: 0.5rem 1rem;
+        border-radius: 15px;
         margin: 0rem 1rem;
+        @include pop($background-color);
+    }
+    a {
+        @include set-background($background-color);
     }
 }
 

@@ -16,7 +16,8 @@
 
 .btn-primary {
     @extend %btn;
-    @include set-background(lighten($color: $primary-color, $amount: 10%));
+    @include set-background($background-color);
+    @include pop($background-color);
 
 }
 
