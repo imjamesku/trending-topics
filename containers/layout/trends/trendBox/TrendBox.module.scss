@@ -18,11 +18,12 @@
     @include pop($background-color);
     font-family: 'Mukta';
     a {
-        color: set-text-color($background-color);
+        // color: set-text-color($background-color);
+        color: lighten($color: $secondary-color, $amount: 5%);
     }
 }
 .dailyTrendsHeader {
-    // color: #fff;
+    color: lighten($color: $secondary-color, $amount: 5%);
     // background-color: #3B88FF;
     // background-color: $secondary-color;
     padding: 10px 20px;
@@ -38,7 +39,6 @@
     border-radius: 20px;
     padding: 0.5rem;
     white-space: nowrap;
-    @include dent($background-color);
     
 }
 .dailyTrendBox ul li {

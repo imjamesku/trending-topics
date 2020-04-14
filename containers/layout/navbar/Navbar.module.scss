@@ -2,7 +2,7 @@
 .navbar {
     // @include set-background($primary-color);
     margin: 1rem;
-    border-radius: 20px;
+    border-radius: 50px;
     @include pop($background-color);
     display: flex;
     justify-content: space-between;
@@ -25,12 +25,15 @@
     li {
         display: inline-block;
         padding: 0.5rem 1rem;
-        border-radius: 15px;
+        border-radius: 30px;
         margin: 0rem 1rem;
         @include pop($background-color);
     }
     a {
         @include set-background($background-color);
+    }
+    button {
+        border-radius: 20px;
     }
 }
 
