@@ -29,12 +29,12 @@ const TrendSearch = (props: Props) => {
         <form onSubmit={search} className={styles.trendSearchForm}>
             <div className={styles.formGroup}>
                 <label htmlFor="start">Start Date: </label>
-                <input type="date" onChange={(e: ChangeEvent<HTMLInputElement>) => setSearchState({ ...searchState, startDate: moment(e.target.value).toDate() })} name="start" id="start" value={moment(searchState.startDate).format('YYYY-MM-DD')} />
+                <input type="date" onChange={(e: ChangeEvent<HTMLInputElement>) => setSearchState({ ...searchState, startDate: moment(e.target.value).toDate() })} name="start" id="start" value={moment(searchState.startDate).format('YYYY-MM-DD')} placeholder="yyyy-mm-dd" />
             </div>
             <div className={styles.formGroup}>
 
                 <label htmlFor="end">End Date: </label>
-                <input type="date" onChange={(e: ChangeEvent<HTMLInputElement>) => setSearchState({ ...searchState, endDate: moment(e.target.value).toDate() })} name="end" id="end" value={moment(searchState.endDate).format('YYYY-MM-DD')} />
+                <input type="date" onChange={(e: ChangeEvent<HTMLInputElement>) => setSearchState({ ...searchState, endDate: moment(e.target.value).toDate() })} name="end" id="end" value={moment(searchState.endDate).format('YYYY-MM-DD')} placeholder="yyyy-mm-dd" />
             </div>
             <select name="geo" id="geo" onChange={(e: ChangeEvent<HTMLSelectElement>) => setSearchState({ ...searchState, geo: e.target.value })} value={searchState.geo}>
                 {countries.map(country => <option value={country.code}>{country.name}</option>)}
