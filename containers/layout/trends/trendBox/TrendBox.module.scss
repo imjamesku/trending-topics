@@ -15,7 +15,7 @@
     /* padding: 1rem; */
     border-radius: 20px;
     padding: 1rem;
-    @include pop($background-color);
+    @include pop($background-color, 6px);
     font-family: 'Mukta';
     a {
         // color: set-text-color($background-color);
@@ -24,8 +24,6 @@
 }
 .dailyTrendsHeader {
     color: lighten($color: $secondary-color, $amount: 5%);
-    // background-color: #3B88FF;
-    // background-color: $secondary-color;
     padding: 10px 20px;
     
 }

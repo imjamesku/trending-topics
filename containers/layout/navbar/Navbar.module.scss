@@ -3,7 +3,7 @@
     // @include set-background($primary-color);
     margin: 1rem;
     border-radius: 50px;
-    @include pop($background-color);
+    @include pop($background-color, 5px);
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     justify-items: center;
@@ -29,7 +29,7 @@
         padding: 0.5rem 1rem;
         border-radius: 30px;
         margin: 0rem 1rem;
-        @include pop($background-color);
+        @include pop($background-color, 5px);
     }
     a {
         // @include set-background($background-color);

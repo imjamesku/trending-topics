@@ -17,14 +17,14 @@
 .btn-primary {
     @extend %btn;
     @include set-background($background-color);
-    @include pop($background-color);
+    @include pop($background-color, 5px);
 
 }
 
 .btn-secondary {
     @extend %btn;
-    // @include set-background(lighten($color: $secondary-color, $amount: 10%));
-    background-color: $background-color;
-    color: $secondary-color;
-    @include pop($background-color);
+    @include set-background(lighten($color: $secondary-color, $amount: 10%));
+    // background-color: $background-color;
+    // color: $secondary-color;
+    @include pop($background-color, 5px, 5px);
 }

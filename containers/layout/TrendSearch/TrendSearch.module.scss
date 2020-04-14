@@ -17,7 +17,6 @@
             font-family: $text-font;
             border-width: 0;        
         }
-        @include pop($background-color);
         border-radius: 10px;
     }
     select {
@@ -27,7 +26,7 @@
         font-size: 1.05rem;
         padding: 0.2rem;
 
-        @include pop($background-color);
+        // @include pop($background-color);
         border-radius: 10px;
         
     }
