@@ -23,5 +23,8 @@
 
 .btn-secondary {
     @extend %btn;
-    @include set-background(lighten($color: $secondary-color, $amount: 10%));
+    // @include set-background(lighten($color: $secondary-color, $amount: 10%));
+    background-color: $background-color;
+    color: $secondary-color;
+    @include pop($background-color);
 }
