@@ -15,21 +15,25 @@
         transition: all 0.3s;
         // font-weight: bold;
         &:hover {
-            color: $secondary-color;
+            color: $third-color;
             transform: scale(1.1);
         }
     }
 
-    .navLinks {
-        list-style: none;
+    .active {
+        color: $third-color;
+        transform: scale(1.1);
     }
 
-    li {
-        display: inline-block;
+    .navLinks {
+        list-style: none;
+        a {
+            display: inline-block;
         padding: 0.5rem 1rem;
         border-radius: 30px;
         margin: 0rem 1rem;
         @include pop($background-color, 5px);
+        }
     }
     a {
         // @include set-background($background-color);
