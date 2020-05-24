@@ -37,7 +37,7 @@ const TrendSearch = (props: Props) => {
                 <input type="date" onChange={(e: ChangeEvent<HTMLInputElement>) => setSearchState({ ...searchState, endDate: moment(e.target.value).toDate() })} name="end" id="end" value={moment(searchState.endDate).format('YYYY-MM-DD')} placeholder="yyyy-mm-dd" />
             </div>
             <select name="geo" id="geo" onChange={(e: ChangeEvent<HTMLSelectElement>) => setSearchState({ ...searchState, geo: e.target.value })} value={searchState.geo}>
-                {countries.map(country => <option value={country.code}>{country.name}</option>)}
+                {countries.map((country, index) => <option key={index} value={country.code}>{country.name}</option>)}
                 {/* <option value="US">United States</option> */}
                 {/* <option value="TW">Taiwan</option> */}
             </select>
