@@ -3,7 +3,7 @@ import nextConnect from 'next-connect'
 
 async function database(req, res, next) {
     if (mongoose.connection.readyState !== 1) {
-        mongoose.connect(process.env.MONGODB_URI)
+        mongoose.connect(process.env.MONGODB_URI, {useUnifiedTopology: true, useNewUrlParser: true})
     }
     return next();
 }
