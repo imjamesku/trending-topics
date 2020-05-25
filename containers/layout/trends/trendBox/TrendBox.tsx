@@ -18,8 +18,13 @@ const TrendBox = ({ dailyTrendData }: TrendBoxProps) => {
             <div className="daily-trends-content">
                 <ul>
                     {dailyTrendData.trendingSearches.map((topic, idx) => (
-                        <li key={idx}>{`${idx}. ${topic}`}
-                            <a href={`https://trends.google.com/trends/explore?q=${topic.replace(' ', '%20')}&date=now%207-d&geo=${dailyTrendData.geo}`} target="_blank">{' '}<i className="fa fa-search"></i></a>
+                        <li key={idx}>
+                            <span>{`${idx + 1}. ${topic}`}</span>
+                            <div>
+                                <a href={`https://trends.google.com/trends/explore?q=${topic.replace(' ', '%20')}&date=now%207-d&geo=${dailyTrendData.geo}`} target="_blank">{' '}<i className="fa fa-history"></i></a>
+                                <a href={`http://google.com/#q=${topic.replace(' ', '+')}`} target="_blank"><i className="fa fa-search"></i></a>
+                            </div>
+
                         </li>))}
                 </ul>
             </div>

@@ -5,20 +5,16 @@
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: flex-start;
-    /* background-color: blue; */
     margin: 0;
     width: 100%;
 }
 .dailyTrendBox {
-    // background-color: white;
     margin: 1rem;
-    /* padding: 1rem; */
     border-radius: 20px;
     padding: 1rem;
     @include pop($background-color, 6px);
     font-family: 'Mukta';
     a {
-        // color: set-text-color($background-color);
         color: lighten($color: $secondary-color, $amount: 5%);
     }
 }
@@ -42,6 +38,15 @@
 .dailyTrendBox ul li {
     padding: 0.2rem 0.8rem;
     transition: transform 0.5s;
+    display: flex;
+    justify-content: space-between;
+    div {
+        white-space: nowrap;
+        a {
+            margin: 0 3px;
+        }
+    }
+    
 }
 .dailyTrendBox ul li:hover {
     transform: scale(1.1);
@@ -49,4 +54,7 @@
     background: lighten($color: $secondary-color, $amount: 10);
     box-shadow: 0 5px 25px rgba(0, 0, 0, .1);
     color: #fff;
+    a {
+        color: white;
+    }
 }
