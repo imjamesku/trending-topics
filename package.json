@@ -20,7 +20,7 @@
     "dotenv": "^8.2.0",
     "google-trends-api": "^4.9.0",
     "isomorphic-unfetch": "^3.0.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "mongoose": "^5.9.7",
     "next": "^9.3.4",
     "next-connect": "^0.6.1",
